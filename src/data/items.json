@@ -1,0 +1,25 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "name": "Avocado",
+            "price": "10€/kg",
+            "imgUrl": "/images/avocado-basket.webp",
+            "measurementUnit": "kg"
+        },
+        {
+            "id": 2,
+            "name": "Tulip",
+            "price": "1€/unit",
+            "imgUrl": "/images/tulips.jpg",
+            "measurementUnit": "unit"
+        },
+        {
+            "id": 3,
+            "name": "Ginger",
+            "price": "4€/g",
+            "imgUrl": "/images/ginger1.jpg",
+            "measurementUnit": "gr"
+        }
+    ]
+}

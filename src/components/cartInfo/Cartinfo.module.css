@@ -1,0 +1,40 @@
+.dropdown {
+    position: relative;
+    border: none;
+}
+
+.dropdown.active > .button, .button:hover {
+    color: black;
+}
+
+.button {
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: #777;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+
+.cart-info {
+    position: absolute;
+    width: 380px;
+    right: 0;
+    top: 60px;
+    background-color: beige;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+    opacity: 0;
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    transform: translateX(100%);
+    pointer-events: none;
+}
+
+.isOpen > .button + .cart-info {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}

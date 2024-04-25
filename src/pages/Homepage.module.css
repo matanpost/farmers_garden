@@ -1,0 +1,8 @@
+.header {
+    background-image: url('../assets/farmer-in-field.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw 100%;
+    width: 100vw;
+    height: 500px;
+}

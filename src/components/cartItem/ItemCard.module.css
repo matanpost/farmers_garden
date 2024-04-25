@@ -1,0 +1,33 @@
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5px 0px;
+    height: 100px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.item-pic {
+ width: 90px;
+ height: 90px;
+ border-radius: 8px;
+}
+
+.number-calc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90px;
+    align-items: center;
+}
+
+.button {
+    background: transparent;
+    border: none;
+}
+
+.number {
+    margin: 5px;
+}
