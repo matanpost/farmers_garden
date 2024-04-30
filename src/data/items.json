@@ -17,8 +17,15 @@
         {
             "id": 3,
             "name": "Ginger",
-            "price": "4€/g",
+            "price": "4€/100gr",
             "imgUrl": "/images/ginger1.jpg",
+            "measurementUnit": "gr"
+        },
+        {
+            "id": 4,
+            "name": "Rabarber",
+            "price": "7€/kg",
+            "imgUrl": "/images/rabarber.webp",
             "measurementUnit": "gr"
         }
     ]
