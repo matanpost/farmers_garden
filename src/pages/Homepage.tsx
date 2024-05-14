@@ -1,16 +1,16 @@
 import React, { FC, PropsWithChildren } from 'react';
-import Carousel from "../components/carousel/Carousel";
-import Navbar from '../components/navbar/Navbar';
-import bgp from '../assets/farmer-in-field.jpeg'
+import CarouselControler from "../components/carousel/Carousel";
 import styles from './Homepage.module.css'
+import { CarouselProvider } from '../context/CarouselContext';
 
-type HompageProps = PropsWithChildren
+type HompageProps = PropsWithChildren & {}
 
 const Homepage: FC<HompageProps> = () => {
   return (
-    <section>
-      <Carousel></Carousel>
-    </section>
+    <CarouselProvider>
+
+      <CarouselControler />
+      </CarouselProvider>
   );
 }
 

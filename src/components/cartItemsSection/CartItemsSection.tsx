@@ -5,7 +5,7 @@ import CartItem from "../cartItem/CartItem";
 
 type CartItemsSectionProps = PropsWithChildren & {}
 
-export const CartItemsSection: FC<CartItemsSectionProps> = ( ) => {
+export const CartItemsSection: FC<CartItemsSectionProps> = () => {
     
 
 

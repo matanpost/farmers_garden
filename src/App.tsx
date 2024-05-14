@@ -6,21 +6,25 @@ import Products from './pages/Products';
 import ProductDetail from './pages/ProductsDetail';
 import Navbar from './components/navbar/Navbar';
 import { ShoppingCartProvider } from './context/CartContext';
+import { CarouselProvider } from './context/CarouselContext';
 
 function App() {
   return (
     <>
-    <ShoppingCartProvider >
-    <div className="header">
-        <Navbar></Navbar>
-      </div>
-      <Routes>
-        <Route path='/' element={<Homepage />} />
-        <Route path='/products' element={<Products />} />
-        <Route path="products/:productId" element={<ProductDetail />} />
-        <Route path='*' element={<Navigate to={'/'} />} />
-      </Routes>
-    </ShoppingCartProvider>
+      <ShoppingCartProvider >
+        
+
+          <div className="header">
+            <Navbar></Navbar>
+          </div>
+          <Routes>
+            <Route path='/' element={<Homepage />} />
+            <Route path='/products' element={<Products />} />
+            <Route path="products/:productId" element={<ProductDetail />} />
+            <Route path='*' element={<Navigate to={'/'} />} />
+          </Routes>
+        
+      </ShoppingCartProvider>
     </>
   );
 }

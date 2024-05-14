@@ -41,6 +41,9 @@ const CartItem: FC<any> = () => {
                 ))
             ) : (<>
                 <p>No items in the cart.
+                ul 
+                list-style-type: none;
+
                 </p>
                 <a href=""> explore our products</a>
             </>

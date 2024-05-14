@@ -27,6 +27,13 @@
             "price": "7€/kg",
             "imgUrl": "/images/rabarber.webp",
             "measurementUnit": "gr"
+        },
+        {
+            "id": 5,
+            "name": "Mushrooms",
+            "price": "4€/kg",
+            "imgUrl": "/images/mushroomsBasket.webp",
+            "measurementUnit": "gr"
         }
     ]
 }
