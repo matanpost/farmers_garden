@@ -20,7 +20,7 @@ type Item = {
 
 const CarouselControler: FC<any> = () => {
   
-  const { goToNextSlide, goToPrevSlide, currentIndex, hello } = useCarousel();
+  const { goToNextSlide, goToPrevSlide, currentIndex } = useCarousel();
   console.log('test: carouselControler');
   
   // let next = document.querySelector('.next')
@@ -51,7 +51,7 @@ const CarouselControler: FC<any> = () => {
       // {items.map(
 
       // )}
-      <Carousel goToNextSlide={goToNextSlide} goToPrevSlide={goToPrevSlide} currentIndex={currentIndex} items={items} hello={hello} />
+      <Carousel goToNextSlide={goToNextSlide} goToPrevSlide={goToPrevSlide} currentIndex={currentIndex} items={items} />
     
   );
 }

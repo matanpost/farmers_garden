@@ -23,9 +23,6 @@
     border-radius: 20px;
 }
 
-.item {
-    background-image: url('../../../public/images/tulips.jpg');
-}
 
 .container .slide .item {
     width: 180px;

@@ -1,10 +1,9 @@
-import { createContext, ReactNode, useContext, useState } from "react";
+import { createContext, ReactNode, useContext, useRef, useState } from "react";
 
 type CarouselContextType = {
     currentIndex: number;
     goToNextSlide: () => void;
     goToPrevSlide: () => void;
-    hello: string
 };
 
 type CarouselContextProviderProps = {
@@ -20,23 +19,20 @@ export const useCarousel = () => {
 export const CarouselProvider = ({ children }: CarouselContextProviderProps) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
+    const element = useRef< HTMLDivElement | null >(null);
+
     const goToNextSlide = () => {
         console.log('im the next button');
-        setCurrentIndex(prevIndex => (prevIndex + 1) % 5); // Assuming 5 slides in total
-        const slide = document.querySelector('.slide');
-        slide?.appendChild(slide.firstElementChild!);
+    
     };
 
     const goToPrevSlide = () => {
         setCurrentIndex(prevIndex => (prevIndex - 1 + 5) % 5);
-        const slide = document.querySelector('.slide');
-        slide?.prepend(slide.lastElementChild!);
     };
 
-    const hello = 'hello';
 
     return (
-        <CarouselContext.Provider value={{ currentIndex, goToNextSlide, goToPrevSlide , hello}}>
+        <CarouselContext.Provider value={{ currentIndex, goToNextSlide, goToPrevSlide }}>
             {children}
         </CarouselContext.Provider>
     );
