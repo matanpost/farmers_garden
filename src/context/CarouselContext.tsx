@@ -1,9 +1,15 @@
 import { createContext, ReactNode, useContext, useRef, useState } from "react";
+import * as data from "../data/items.json"
+import { ProductType } from "../components/carousel/Item";
+
+const itemsString = JSON.stringify(data);
+let itemsArray:any [] = JSON.parse(itemsString).items
 
 type CarouselContextType = {
     currentIndex: number;
     goToNextSlide: () => void;
     goToPrevSlide: () => void;
+    items: ProductType[]
 };
 
 type CarouselContextProviderProps = {
@@ -18,21 +24,25 @@ export const useCarousel = () => {
 
 export const CarouselProvider = ({ children }: CarouselContextProviderProps) => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [items, setItems] = useState(itemsArray);
 
     const element = useRef< HTMLDivElement | null >(null);
 
     const goToNextSlide = () => {
-        console.log('im the next button');
-    
+        setCurrentIndex(prevIndex => (prevIndex + 1) % items.length);
+        const [firstItem, ...rest] = items;
+        setItems([...rest, firstItem]);
     };
 
     const goToPrevSlide = () => {
-        setCurrentIndex(prevIndex => (prevIndex - 1 + 5) % 5);
+        setCurrentIndex(prevIndex => (prevIndex - 1 + items.length) % items.length);
+        // const [...rest, lastItem] = items;
+        // setItems([lastItem, ...rest]);
     };
 
 
     return (
-        <CarouselContext.Provider value={{ currentIndex, goToNextSlide, goToPrevSlide }}>
+        <CarouselContext.Provider value={{ currentIndex, goToNextSlide, goToPrevSlide, items }}>
             {children}
         </CarouselContext.Provider>
     );

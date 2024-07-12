@@ -1,5 +1,5 @@
 import React, { FC, PropsWithChildren } from 'react';
-import CarouselControler from "../components/carousel/Carousel";
+import CarouselControler from "../components/carousel/CarouselControler";
 import styles from './Homepage.module.css'
 import { CarouselProvider } from '../context/CarouselContext';
 
@@ -10,7 +10,7 @@ const Homepage: FC<HompageProps> = () => {
     <CarouselProvider>
 
       <CarouselControler />
-      </CarouselProvider>
+    </CarouselProvider>
   );
 }
 
