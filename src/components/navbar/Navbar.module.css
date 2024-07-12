@@ -8,11 +8,17 @@
     justify-content: space-between;
     padding: 4px 4vw;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    ul {
+        padding-inline-start: 0px;
+    }
 }
 
 .nav:hover {
-    background: #F0F2F7;
+    background: #f2fde8fc;
     transform: background 3s;
+    a {
+       color: #50C878; 
+    }
 }
 
 .logo {
@@ -23,24 +29,27 @@
 
 .links-container {
     display: flex;
-    width: 300px;
+    width: 340px;
     justify-content: space-evenly;
     gap: 32px;
+    li:nth-child(2) {
+        width: 360px;
+    }
 }
 
 .link {
-    width: 33%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
     align-content: center;
-    height: 32px;
+    height: 35px;
 }
 
 .link a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 30px;
+    color: #F9F6EE;
+    font-size: 24px;
     width: 100%;
     height: 100%;
     transition: scale 0.2 ease;

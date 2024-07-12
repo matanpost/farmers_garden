@@ -5,28 +5,45 @@
             "name": "Avocado",
             "price": "10€/kg",
             "imgUrl": "/images/avocado-basket.webp",
-            "measurementUnit": "kg"
+            "measurementUnit": "kg",
+            "description": "",
+            "wordsToSale": "Avocado is helthy for you"
         },
         {
             "id": 2,
             "name": "Tulip",
             "price": "1€/unit",
             "imgUrl": "/images/tulips.jpg",
-            "measurementUnit": "unit"
+            "measurementUnit": "unit",
+            "description": "",
+            "wordsToSale": "Our tulips are the most beautiful"
         },
         {
             "id": 3,
             "name": "Ginger",
             "price": "4€/100gr",
             "imgUrl": "/images/ginger1.jpg",
-            "measurementUnit": "gr"
+            "measurementUnit": "gr",
+            "description": "",
+            "wordsToSale": "Ginger is healthy for you"
         },
         {
             "id": 4,
             "name": "Rabarber",
             "price": "7€/kg",
             "imgUrl": "/images/rabarber.webp",
-            "measurementUnit": "gr"
+            "measurementUnit": "gr",
+            "description": "",
+            "wordsToSale": "It tastes amazing"
+        },
+        {
+            "id": 5,
+            "name": "Mushrooms",
+            "price": "4€/kg",
+            "imgUrl": "/images/mushroomsBasket.webp",
+            "measurementUnit": "gr",
+            "description": "",
+            "wordsToSale": "The best quality you can find"
         }
     ]
 }
