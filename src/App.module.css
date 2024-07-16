@@ -1,0 +1,70 @@
+.header {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw 100%;
+  width: 100vw;
+  height: 500px;
+  position: relative;
+}
+
+.background1 {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.25)
+  ),
+  url("https://media.gettyimages.com/id/623943320/de/foto/unkenntlich-erkennbarer-landwirt-der-korb-mit-gem%C3%BCse-tr%C3%A4gt.jpg?s=2048x2048&w=gi&k=20&c=UM2_CQhaQh-ArC8ANw9p5J60G_xTV89ColmuF3yUg7Y=");
+}
+
+.background2 {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.25)
+  ),
+  url("https://media.gettyimages.com/id/1184607253/de/foto/vater-und-sohn-ernten-tomaten-in-einem-gew%C3%A4chshaus.jpg?s=2048x2048&w=gi&k=20&c=lec_pNNlzNeJXgfghAAgcVKa69DumWjSaxN-i33s2Gs=");
+}
+
+.background3 {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.25)
+  ),
+  url("https://qph.cf2.quoracdn.net/main-qimg-0d54b4d83c4b232a5e05b265a7282be9");
+}
+
+.background4 {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.25)
+  ),
+  url("https://c7.alamy.com/comp/F49C8C/farmer-and-customer-shaking-hands-F49C8C.jpg");
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 20px; /* Adjust the height of the wave as needed */
+  background: linear-gradient(to right, transparent 50%, rgb(0, 0, 0) 50%);
+  border-radius: 50%;
+}
+
+.textBox {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  height: 40%;
+  width: 440px;
+  position: absolute;
+  top: 40%;
+  
+}
+
+.slogenText {
+  color: white;
+            font-size: 50px;
+            text-shadow: -1.5px 1.5px 0 #000,
+                1px 1px 0 #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+}
