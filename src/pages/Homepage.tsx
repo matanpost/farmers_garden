@@ -6,12 +6,13 @@ import { CarouselProvider } from '../context/CarouselContext';
 type HompageProps = PropsWithChildren & {}
 
 const Homepage: FC<HompageProps> = () => {
-  return (
+  return (<div>
     <CarouselProvider>
 
       <CarouselControler />
     </CarouselProvider>
-  );
+    
+  </div>);
 }
 
 export default Homepage;
